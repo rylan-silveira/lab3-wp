@@ -1,14 +1,18 @@
 {
-  "name": "node-http-server",
+  "name": "lab02_cart",
   "version": "1.0.0",
-  "description": "Node.js example server starter project",
-  "main": "src/index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "debug": "nodemon --inspect app.js"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "nodemon": "1.18.4"
-  },
-  "keywords": []
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
 }
