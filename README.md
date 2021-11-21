@@ -1,2 +1,2 @@
 # lab3-wp
-Created with CodeSandbox
+Created with Visual Studio Code

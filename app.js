@@ -23,3 +23,28 @@ app.get("/", (req, res) => {
 app.get("/contacts", (req, res) => {
   res.render("contacts");
 });
+
+//route for register
+app.get("/register", (req, res) => {
+ res.render("register"); 
+});
+
+//route for login
+app.get("/login", (req, res) => {
+ res.render("login"); 
+});
+
+// // //pass requests to the router middleware
+const router = require("./apis/routes");
+app.use(router);
+
+//route for catalog
+app.get("/api/catalog", (req, res) => {
+  res.render("catalog");
+});
+
+//route for clients
+app.get("/api/clients", (req, res) => {
+  res.render("clients");
+});
+
