@@ -11,8 +11,6 @@ const router = express.Router();
 router.get('/api/catalog', productController.getCatalog);
 router.get('/api/article/:id', productController.getProductByID);
 
-//export router
-module.exports = router;
 
 //routes for dynamic processing of clients
 //-----------------------------------------------
@@ -20,4 +18,5 @@ module.exports = router;
 router.post('/api/register', clientController.registerControl);
 //route for login
 router.post('/api/login', clientController.loginControl);
+//export router
 module.exports = router;

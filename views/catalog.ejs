@@ -1,6 +1,6 @@
 <%- include('header'); -%>
     <div class="content">
-        <%= products %>
+        <h1 id="welcome">WELCOME to Webstore</h1>
         <h1>Selected articles</h1>
         <table id="catalog">
             <thead>
@@ -12,26 +12,26 @@
                 </tr>
             </thead>
             <tbody>
-                <% products.forEach(product => { %>
+                <% products.forEach(product=> { %>
                     <tr>
                         <th scope="row">
                             <%= product.name %>
-                        </th>
-                        <td>
-                            <a href="/api/article/<%= product.reference %>">
-                                <%= product.reference %>
-                            </a>
-                        </td>
-                        <td>
-                            <%= product.category %>
-                        </td>
-                        <td>
-                            <%= product.price %>AED
-                        </td>
-                    </tr>
-                    <% }) %>
-            </tbody>
-        </table>
-    </div>
-    <br>
-    <%- include('footer'); -%>
+                            </th>
+                            <td>
+                                <a href="/api/article/<%= product.reference %>">
+                                    <%= product.reference %>
+                                    </a>
+                                </td>
+                                <td>
+                                    <%= product.category %>
+                                    </td>
+                                    <td>
+                                        <%= product.price %>AED
+                                        </td>
+                                    </tr>
+                                    <% }) %>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br>
+                            <%- include('footer'); -%>
